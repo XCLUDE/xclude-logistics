@@ -1,0 +1,27 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* customs_eori
+
+msgid "Verify EORI Numbers"
+msgstr "Verifiser EORI-numre"
+
+msgid "EORI Number"
+msgstr "EORI-nummer"
+
+msgid "Customs EORI Validation for Partner's EORI Numbers"
+msgstr "Toll EORI-validering for partnerens EORI-numre"
+
+msgid "Please verify the EORI Number."
+msgstr "Vennligst verifiser EORI-nummeret."
+
+msgid "Economic Operator Registration and Identification Number used for customs identification in EU and GB."
+msgstr "Økonomisk operatørregistrerings- og identifikasjonsnummer som brukes til tollidentifikasjon i EU og GB."
+
+msgid "HMRC EORI validation failed with status code: %s"
+msgstr "HMRC EORI-validering feilet med statuskode: %s"
+
+msgid "Valid"
+msgstr "Gyldig"
+
+msgid "EORI number is invalid."
+msgstr "EORI-nummeret er ugyldig."

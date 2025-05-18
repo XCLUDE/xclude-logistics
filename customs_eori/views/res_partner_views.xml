@@ -6,7 +6,7 @@
         <field name="inherit_id" ref="base.view_partner_form"/>
         <field name="arch" type="xml">
             <xpath expr="//field[@name='company_registry']" position="after">
-                <field name="eori_number" placeholder="e.g. BE0477472701"/>
+                <field name="eori_number" string="EORI Number" placeholder="e.g. BE0477472701"/>
             </xpath>
         </field>
     </record>

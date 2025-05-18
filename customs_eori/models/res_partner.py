@@ -29,13 +29,14 @@ class ResPartner(models.Model):
         for partner in self:
             if partner.eori_number:
                 try:
-                    if not self._validate_eori(partner.eori_number):
+                    if not self.validate_eori(partner.eori_number):
                         raise ValidationError(_('Invalid EORI Number: %s') % partner.eori_number)
                 except Exception as e:
                     _logger.exception("EORI validation error for %s: %s", partner.name, e)
                     raise ValidationError(_('EORI validation could not be completed.'))
 
-    def _validate_eori(self, full_eori_number):
+    @api.model
+    def validate_eori(self, full_eori_number):
         eori_country, eori_number = self._split_eori(full_eori_number)
 
         if eori_country in ['GB', 'XI']:
@@ -49,6 +50,7 @@ class ResPartner(models.Model):
 
         return False
 
+    @api.model
     @tools.ormcache('eori')
     def _validate_eori_eu(self, eori):
         """EU validation using Odoo's ZeepClient."""
@@ -60,6 +62,7 @@ class ResPartner(models.Model):
             _logger.warning("EU EORI validation failed for %s: %s", eori, e)
             return False
 
+    @api.model
     @tools.ormcache('eori')
     def _validate_eori_gb(self, eori):
         """HMRC GB validation."""

@@ -51,7 +51,7 @@ class ResPartner(models.Model):
                 continue
             is_valid = partner._is_eori_valid()
             partner.eori_validation_state = 'valid' if is_valid else 'invalid'
-            msg = _("Valid EORI Number: <b>%s</b>") if is_valid else _("Invalid EORI Number: <b>%s</b>")
+            msg = _("Valid EORI Number: %s") if is_valid else _("Invalid EORI Number: %s")
             partner.message_post(body=msg % partner.eori_number, message_type="comment")
 
     @api.model

@@ -5,14 +5,14 @@
         <field name="model">res.config.settings</field>
         <field name="inherit_id" ref="account.res_config_settings_view_form"/>
         <field name="arch" type="xml">
-            <settings id="eu_service" position="after">
-                <settings
+            <xpath expr="//setting[@id='eu_service']" position="after">
+                <setting
                     id="eori_service"
                     title="EORI Number Validation"
                     help="Verify EORI numbers using the lookup service. If enabled, contacts with invalid EORI numbers cannot be saved.">
                     <field name="eori_validation"/>
-                </settings>
-            </settings>
+                </setting>
+            </xpath>
         </field>
     </record>
 </odoo>

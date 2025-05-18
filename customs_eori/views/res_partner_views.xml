@@ -7,6 +7,7 @@
         <field name="arch" type="xml">
             <xpath expr="//field[@name='company_registry']" position="after">
                 <field name="eori_number" string="EORI Number" placeholder="e.g. BE0477472701"/>
+                <field name="eori_validation_state" widget="badge" string="EORI State"/>
             </xpath>
         </field>
     </record>

@@ -1,27 +1,54 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* customs_eori
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sv\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "Verify EORI Numbers"
+msgstr "Verifiera EORI-nummer"
+
+msgid "Verify EORI Number"
 msgstr "Verifiera EORI-nummer"
 
 msgid "EORI Number"
 msgstr "EORI-nummer"
 
+msgid "EORI Number Validation"
+msgstr "EORI-nummervalidering"
+
+msgid "EORI Validation State"
+msgstr "EORI-valideringsstatus"
+
 msgid "Customs EORI Validation for Partner's EORI Numbers"
 msgstr "Tull EORI-verifiering för partners EORI-nummer"
-
-msgid "Please verify the EORI Number."
-msgstr "Vänligen verifiera EORI-numret."
 
 msgid "Economic Operator Registration and Identification Number used for customs identification in EU and GB."
 msgstr "Ekonomisk operatörsregistrerings- och identifieringsnummer används för tullidentifiering i EU och GB."
 
-msgid "HMRC EORI validation failed with status code: %s"
-msgstr "HMRC EORI-validering misslyckades med statuskod: %s"
+msgid "Valid EORI Number: %s"
+msgstr "Giltigt EORI-nummer: %s"
+
+msgid "Invalid EORI Number: %s"
+msgstr "Ogiltigt EORI-nummer: %s"
+
+msgid "EORI validation service unavailable for: %s — please retry later."
+msgstr "EORI-valideringstjänsten är inte tillgänglig för: %s — försök igen senare."
+
+msgid "Unchecked"
+msgstr "Ej kontrollerat"
 
 msgid "Valid"
 msgstr "Giltig"
 
-msgid "EORI number is invalid."
-msgstr "EORI-numret är ogiltigt."
+msgid "Invalid"
+msgstr "Ogiltig"
+
+msgid "Service Unavailable"
+msgstr "Tjänst ej tillgänglig"
+
+msgid "Verify EORI numbers using the EU/HMRC lookup service."
+msgstr "Verifiera EORI-nummer med hjälp av EU/HMRC-söktjänsten."

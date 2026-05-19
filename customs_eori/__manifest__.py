@@ -1,6 +1,6 @@
 {
     'name': 'Customs EORI Validation',
-    'version': '1.0',
+    'version': '19.0.1.0.0',
     'author': 'XCLUDE',
     'website': 'https://www.xclude.se',
     'category': 'Logistics/Customs',
@@ -12,7 +12,9 @@ Customs EORI Validation for Partner's EORI Numbers
 This module adds validation for EU and UK (GB) EORI numbers in Odoo, ensuring compliance with customs regulations.
     """,
     'depends': ['account'],
+    'external_dependencies': {'python': ['zeep']},
     'data': [
+        'views/res_company_views.xml',
         'views/res_partner_views.xml',
         'views/res_config_settings_views.xml',
     ],

@@ -6,8 +6,13 @@
         <field name="inherit_id" ref="base.view_partner_form"/>
         <field name="arch" type="xml">
             <xpath expr="//field[@name='company_registry']" position="after">
-                <field name="eori_number" string="EORI Number" placeholder="e.g. BE0477472701"/>
-                <field name="eori_validation_state" widget="badge" string="EORI State"/>
+                <field name="eori_number" string="EORI Number" placeholder="e.g. BE0477472701" invisible="not is_company"/>
+                <field name="eori_validation_state" widget="badge" string="EORI State"
+                    invisible="not is_company"
+                    decoration-success="eori_validation_state == 'valid'"
+                    decoration-danger="eori_validation_state == 'invalid'"
+                    decoration-warning="eori_validation_state == 'unavailable'"
+                    decoration-muted="eori_validation_state == 'unchecked'"/>
             </xpath>
         </field>
     </record>
